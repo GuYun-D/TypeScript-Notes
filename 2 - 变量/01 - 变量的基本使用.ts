@@ -2,7 +2,6 @@
 let age: number
 // 赋值
 age = 18
-
 console.log(age);
 
 // 直接

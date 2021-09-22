@@ -1,0 +1,3 @@
+# 类型断言
+有时候typescript无法获取到具体的类型，这个时候就需要类型断言
+- 如通过document.getElementById,ts只知道该函数会返回HTMLElement，但并不知道它的具体类型

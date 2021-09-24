@@ -22,6 +22,9 @@ console.log(userGender); // 0
  */
 enum box { a = 1, c = 8 }
 
+// 枚举的类型
+let d: Gender = Gender.Female
+
 
 
 /**

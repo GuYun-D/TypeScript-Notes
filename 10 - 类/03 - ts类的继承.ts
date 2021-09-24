@@ -6,7 +6,7 @@ class Person5 {
     }
 
     run(): string {
-        return `${this.name}在运动`
+        return `${this.name}在运动-----------父类方法`
     }
 
     getName(): string {
@@ -30,16 +30,18 @@ class Man extends Person5 {
         super(name)
     }
 
-    work():string {
+    work(): string {
         return `${this.name}在工作`
     }
 
     // 父子类有相同的方法时，子类在调用时找的是自己的方法
     run(): string {
+        console.log(super.run());
+
         return `${this.name}在运动 ---- 子类方法`
     }
 }
 
 let m = new Man("代文辉")
-console.log(m.work());
+// console.log(m.work());
 console.log(m.run());

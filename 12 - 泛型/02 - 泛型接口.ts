@@ -36,3 +36,18 @@ function setData2<T>(value: T): T {
 let myData: ConfigFn2<string> = setData2
 
 console.log(myData("太他喵乱了"));
+
+/**
+ * 简单的
+ */
+// interface IPerson<T1 = string, T2 = number>  添加默认类型
+interface IPerson<T1, T2> {
+    name: T1,
+    age: T2
+}
+
+
+const p: IPerson<string, number> = {
+    name: "张三",
+    age: 16
+}

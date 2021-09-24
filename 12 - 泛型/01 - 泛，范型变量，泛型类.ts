@@ -3,6 +3,7 @@
  *       同时也要考虑可重用性，组件不仅能够支持当前的数据类型，
  *       同时也要支持未来的数据类型
  * 通俗理解：泛型就是解决类，接口，方法的复用性，以及对不特定数据类型的支持
+ *          类型参数化
  *
  */
 
@@ -12,12 +13,18 @@
 // }
 
 // 泛型，可以支持不特定的数据类型，传入的参数和返回的参数类型一致
-// function fn<T>(value: T): T {
-//     return value
-// }
+function fn<T>(value: T): T {
+    return value
+}
 
 // fn<number>(123)
 // fn<string>('123')
+// fn<{}>({})
+// fn<any[]>([])
+
+// 类型推导:推导出的是字面量类型
+// function fn<20>(value: 20): 20
+// fn(20)
 
 // function fn1<T>(value: T): any {
 //     return value

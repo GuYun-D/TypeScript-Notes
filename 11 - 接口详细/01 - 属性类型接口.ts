@@ -5,7 +5,7 @@
  *      必须提供某些方法
  */
 
-// 属性接口     对json的约束
+// 属性接口     对json的约束，可以用于对象类型的声明，有一个规范，在接口名字前加一个“I”，表示是接口
 interface FullName {
     firstName: string;
     secondName: string;

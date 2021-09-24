@@ -1,5 +1,7 @@
 /**
- * 默认参数必须写在最后
+ * 默认参数建议写在最后
+ * function info2(age: number = 18,name: string) {}
+ * 这样的话info2(undefined, "传值")
  */
 
 function info1(name: string, age: number = 18) {

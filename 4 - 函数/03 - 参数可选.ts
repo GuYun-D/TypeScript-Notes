@@ -1,5 +1,6 @@
 /**
  *  在参数后面加上一个问好，就能实现
+ * 必须写在必传参数后面
  */
 
 function info(name: string, age?: number) {

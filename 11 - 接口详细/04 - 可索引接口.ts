@@ -8,6 +8,8 @@ interface UserArr {
      * 元素是string
      */
     // [index: number]: string;
+
+    // 索引是数字，值是任意的
     [index: number]: any
 }
 
